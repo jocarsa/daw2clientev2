@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de iframe oculto</title>
+</head>
+<body>
+  <h1>Ejemplos de iframes ocultos</h1>
+
+  <!-- IFRAME 1: usando el atributo "hidden" -->
+  <iframe src="https://example.com" hidden></iframe>
+
+  <!-- IFRAME 2: oculto mediante estilo -->
+  <iframe src="https://example.com"
+          style="visibility:hidden; width:0; height:0; border:none;"></iframe>
+
+  <!-- IFRAME 3: creado dinámicamente con JavaScript -->
+  <script>
+    const iframe = document.createElement("iframe");
+
+    iframe.src = "https://google.com";
+
+    // Ocultarlo completamente
+    iframe.style.display = "none";
+    document.body.appendChild(iframe);
+  </script>
+</body>
+</html>

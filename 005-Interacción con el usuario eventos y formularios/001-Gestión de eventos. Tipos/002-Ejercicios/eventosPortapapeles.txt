@@ -1,0 +1,10 @@
+Portapapeles mágico:
+
+Modifica los listener de cortado y copiado para que se almacene en el portapapeles un texto diferente al seleccionado
+	- event.clipboardData.setData("text/plain", "Contenido personalizado");
+
+Añade un botón que copie un fragmento de texto al portapapeles
+
+Modifica el listener de pegado para impedir que se pueda pegar una palabra prohibida
+	- Se comprobará el estado del portapapeles antes de pegar
+	- Si en el portapapeles está la palabra prohibida en su lugar se pegará "*"

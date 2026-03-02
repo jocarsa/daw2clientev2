@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo iframe YouTube con JavaScript</title>
+</head>
+<body>
+  <h1>Video insertado con JavaScript</h1>
+  <div id="video-container"></div>
+
+  <script>
+    const iframe = document.createElement("iframe");
+
+    iframe.width = "560";
+    iframe.height = "315";
+    iframe.src = "https://www.youtube-nocookie.com/embed/qrKKtzXaUHQ?si=jY0r7kCku1BSnuDR";
+    iframe.title = "YouTube video player";
+    iframe.frameBorder = "0";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.allowFullscreen = true;
+
+    // Insertar el iframe en el div contenedor
+    document.getElementById("video-container").appendChild(iframe);
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aprendiendo Javascript</title>
+  </head>
+  <body>
+    <script>
+      // Array de libros en la biblioteca
+      const biblioteca = [
+        {
+          titulo: "Cien años de soledad",
+          autor: "Gabriel García Márquez",
+          disponible: true,
+        },
+        { 
+            titulo: "1984", 
+            autor: "George Orwell", 
+            disponible: false 
+        },
+        {
+          titulo: "El Principito",
+          autor: "Antoine de Saint-Exupéry",
+          disponible: true,
+        },
+        {
+          titulo: "Don Quijote de la Mancha",
+          autor: "Miguel de Cervantes",
+          disponible: true,
+        },
+      ];
+
+      // Mostrar información de cada libro usando forEach
+      console.log("Libros en la biblioteca:");
+      biblioteca.forEach(function (libro) {
+        console.log('"' + libro.titulo + '" por ' + libro.autor + " - " + (libro.disponible ? "Disponible" : "No disponible"));
+    });
+
+      // Ejemplo adicional: marcar todos los libros como no disponibles
+      biblioteca.forEach(function (libro) {
+        libro.disponible = false;
+      });
+
+      console.log("\nDespués de actualizar disponibilidad:");
+      biblioteca.forEach(function (libro) {
+        console.log('"' + libro.titulo + '" - ' + (libro.disponible ? "Disponible" : "No disponible"));
+      });
+    </script>
+  </body>
+</html>

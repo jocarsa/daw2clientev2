@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de open() y close()</title>
+</head>
+<body>
+  <button onclick="abrirVentana()">Abrir ventana</button>
+  <button onclick="cerrarVentana()">Cerrar ventana</button>
+
+  <script>
+    let nuevaVentana;
+
+    function abrirVentana() {
+      nuevaVentana = window.open(
+        "",                 // URL vacía (una página en blanco)
+        "miVentana",        // nombre de la ventana
+        "width=400,height=300" // características (tamaño)
+      );
+
+      nuevaVentana.document.write("<h1>Hola desde la nueva ventana!</h1>");
+    }
+
+    function cerrarVentana() {
+      if (nuevaVentana) {
+        nuevaVentana.close();
+      } else {
+        alert("No hay ventana abierta.");
+      }
+    }
+  </script>
+</body>
+</html>
