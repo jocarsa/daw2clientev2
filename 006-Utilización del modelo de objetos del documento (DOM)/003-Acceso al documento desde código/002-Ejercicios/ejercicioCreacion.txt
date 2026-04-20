@@ -11,3 +11,9 @@ Ampliación:
 		- Las tareas pendientes tienen una imagen y las 			completadas otra
 	- Añade un enlace a la tarea
 		- El link de la web se guarda en un atributo
+
+Ampliación 2:
+	- Añade un botón para asignar una prioridad a cada tarea
+		- La prioridad se guarda como atributo
+	- Añade un botón que reorganice automáticamente las tareas por 	prioridad
+		- Esta reorganización se hará sustituyendo en pantalla 			unas tareas por otras
