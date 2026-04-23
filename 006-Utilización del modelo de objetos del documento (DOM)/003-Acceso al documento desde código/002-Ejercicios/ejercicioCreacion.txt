@@ -17,3 +17,7 @@ Ampliación 2:
 		- La prioridad se guarda como atributo
 	- Añade un botón que reorganice automáticamente las tareas por 	prioridad
 		- Esta reorganización se hará sustituyendo en pantalla 			unas tareas por otras
+
+Ampliación 3:
+	- Refactoriza los listeners de los botones para que existan como funciones independientes a la función crear tarea
+		- Estas funciones tienen que acceder a los elementos de la tarjeta navegando por la jerarquía del DOM y no directamente accediendo a las variables de la función anterior
