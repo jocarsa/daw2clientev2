@@ -10,3 +10,4 @@ Cuando el usuario pulse el enlace interior, se deberá mostrar en una zona de re
 	- El orden en que se ejecutan los listeners
 	- La fase actual del evento
 	- El identificador del target
+	- Un contador de quien ha recibido cada click
