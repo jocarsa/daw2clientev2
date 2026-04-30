@@ -11,3 +11,15 @@ Cuando el usuario pulse el enlace interior, se deberá mostrar en una zona de re
 	- La fase actual del evento
 	- El identificador del target
 	- Un contador de quien ha recibido cada click
+
+Ampliación:
+	- Añade una funcionalidad de carrito
+	- Se puede clicar en un objeto para añadirlo al carrito
+	- El objeto tiene:
+		- Nombre
+		- Precio
+		- Cantidad
+		- Botón de incrementar cantidad
+		- Botón de disminuir cantidad
+	- Se puede seleccionar el objeto para resaltarlo
+	- Modificar una cantidad recalcula el precio total del carrito
